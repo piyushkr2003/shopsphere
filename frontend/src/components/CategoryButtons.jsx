@@ -10,7 +10,7 @@ const CategoryButtons = ({ activeCategory, setActiveCategory }) => {
           onClick={() => setActiveCategory(category)}
           className={`px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-200
             ${
-              activeCategory === category
+              activeCategory.toLowerCase() === category.toLowerCase()
                 ? 'bg-indigo-600 text-white shadow-md'
                 : 'bg-slate-900 text-slate-300 hover:bg-slate-800 hover:text-white border border-slate-800'
             }`}

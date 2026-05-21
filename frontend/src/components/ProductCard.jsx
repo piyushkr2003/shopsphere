@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
 
 const ProductCard = ({ product }) => {
+  const { addToCart } = useContext(CartContext);
   return (
     <div className="group w-full bg-slate-900 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-800 flex flex-col h-full">
       {/* Product Image Container */}
-      <div className="relative overflow-hidden bg-slate-850 flex-shrink-0">
+      <Link to={`/product/${product._id || product.id}`} className="relative overflow-hidden bg-slate-850 flex-shrink-0 block">
         <img
           src={product.imageUrl || product.image}
           alt={product.name}
@@ -16,15 +19,17 @@ const ProductCard = ({ product }) => {
           </svg>
           {product.rating || 4.5}
         </div>
-      </div>
+      </Link>
 
       {/* Product Details */}
       <div className="p-6 flex flex-col flex-grow">
         <div className="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2.5 flex-shrink-0">
           {product.category}
         </div>
-        <h3 className="text-xl font-bold text-white mb-5 line-clamp-2 leading-snug flex-grow">
-          {product.name}
+        <h3 className="text-xl font-bold text-white mb-5 line-clamp-2 leading-snug flex-grow hover:text-indigo-400 transition-colors">
+          <Link to={`/product/${product._id || product.id}`}>
+            {product.name}
+          </Link>
         </h3>
         
         <div className="mt-auto flex items-center justify-between pt-5 border-t border-slate-800 flex-shrink-0">
@@ -32,6 +37,7 @@ const ProductCard = ({ product }) => {
             ${product.price.toFixed(2)}
           </span>
           <button 
+            onClick={() => addToCart(product)}
             className="bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl p-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-slate-900 shadow flex items-center justify-center"
             aria-label="Add to cart"
           >
