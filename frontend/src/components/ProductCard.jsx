@@ -5,15 +5,15 @@ import { CartContext } from '../context/CartContext';
 const ProductCard = ({ product }) => {
   const { addToCart } = useContext(CartContext);
   return (
-    <div className="group w-full bg-slate-900 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-800 flex flex-col h-full">
+    <div className="group w-full bg-white dark:bg-slate-900 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col h-full">
       {/* Product Image Container */}
-      <Link to={`/product/${product._id || product.id}`} className="relative overflow-hidden bg-slate-850 flex-shrink-0 block">
+      <Link to={`/product/${product._id || product.id}`} className="relative overflow-hidden bg-slate-50 dark:bg-slate-850 flex-shrink-0 block">
         <img
           src={product.imageUrl || product.image}
           alt={product.name}
-          className="w-full h-72 object-cover transform group-hover:scale-102 transition-transform duration-500 ease-out"
+          className="w-full h-72 sm:h-80 md:h-72 xl:h-80 object-cover transform group-hover:scale-102 transition-transform duration-500 ease-out"
         />
-        <div className="absolute top-5 right-5 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-full text-sm font-bold text-white flex items-center shadow border border-slate-800">
+        <div className="absolute top-5 right-5 bg-white/95 dark:bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-full text-sm font-bold text-slate-800 dark:text-white flex items-center shadow border border-slate-200 dark:border-slate-800">
           <svg className="h-4 w-4 text-yellow-400 mr-1.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
           </svg>
@@ -23,22 +23,22 @@ const ProductCard = ({ product }) => {
 
       {/* Product Details */}
       <div className="p-6 flex flex-col flex-grow">
-        <div className="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2.5 flex-shrink-0">
+        <div className="text-sm font-semibold text-indigo-650 dark:text-indigo-400 uppercase tracking-wider mb-2.5 flex-shrink-0">
           {product.category}
         </div>
-        <h3 className="text-xl font-bold text-white mb-5 line-clamp-2 leading-snug flex-grow hover:text-indigo-400 transition-colors">
+        <h3 className="text-xl font-bold text-slate-850 dark:text-white mb-5 line-clamp-2 leading-snug flex-grow hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
           <Link to={`/product/${product._id || product.id}`}>
             {product.name}
           </Link>
         </h3>
         
-        <div className="mt-auto flex items-center justify-between pt-5 border-t border-slate-800 flex-shrink-0">
-          <span className="text-2xl font-extrabold text-white">
+        <div className="mt-auto flex items-center justify-between pt-5 border-t border-slate-200 dark:border-slate-800 flex-shrink-0">
+          <span className="text-2xl font-extrabold text-slate-900 dark:text-white">
             ${product.price.toFixed(2)}
           </span>
           <button 
             onClick={() => addToCart(product)}
-            className="bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl p-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-slate-900 shadow flex items-center justify-center"
+            className="bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl p-4 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-white dark:focus:ring-offset-slate-900 shadow flex items-center justify-center"
             aria-label="Add to cart"
           >
             <svg className="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

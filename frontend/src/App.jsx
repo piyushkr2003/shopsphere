@@ -16,7 +16,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white w-full font-sans selection:bg-indigo-500 selection:text-white flex flex-col">
+    <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-white w-full font-sans selection:bg-indigo-500 selection:text-white flex flex-col">
       <Navbar />
       <main className="w-full flex-grow flex flex-col">
         <Routes>

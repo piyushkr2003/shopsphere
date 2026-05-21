@@ -12,7 +12,7 @@ const CategoryButtons = ({ activeCategory, setActiveCategory }) => {
             ${
               activeCategory.toLowerCase() === category.toLowerCase()
                 ? 'bg-indigo-600 text-white shadow-md'
-                : 'bg-slate-900 text-slate-300 hover:bg-slate-800 hover:text-white border border-slate-800'
+                : 'bg-white dark:bg-slate-900 text-slate-650 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-slate-800'
             }`}
         >
           {category}

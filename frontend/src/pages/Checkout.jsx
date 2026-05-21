@@ -83,12 +83,12 @@ const Checkout = () => {
   };
 
   return (
-    <div className="flex-grow bg-slate-950 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="flex-grow bg-slate-50 dark:bg-slate-950 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-white mb-10 tracking-tight">Checkout</h1>
+        <h1 className="text-4xl font-extrabold text-slate-900 dark:text-white mb-10 tracking-tight">Checkout</h1>
         
         {error && (
-          <div className="bg-red-950/20 border border-red-900/50 text-red-200 px-4 py-3 rounded-xl text-sm mb-6 max-w-3xl" role="alert">
+          <div className="bg-red-100 dark:bg-red-950/20 border border-red-200 dark:border-red-900/50 text-red-750 dark:text-red-200 px-4 py-3 rounded-xl text-sm mb-6 max-w-3xl" role="alert">
             <span className="font-bold">Error:</span> {error}
           </div>
         )}
@@ -97,9 +97,9 @@ const Checkout = () => {
           {/* Shipping Form & Payment */}
           <div className="lg:col-span-2 space-y-8">
             {/* Shipping Card */}
-            <div className="bg-slate-900 border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <svg className="h-6 w-6 mr-2 text-indigo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center">
+                <svg className="h-6 w-6 mr-2 text-indigo-500 dark:text-indigo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -108,7 +108,7 @@ const Checkout = () => {
               
               <div className="space-y-4">
                 <div>
-                  <label htmlFor="fullName" className="block text-sm font-semibold text-slate-300 mb-2">
+                  <label htmlFor="fullName" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
                     Full Name
                   </label>
                   <input
@@ -117,12 +117,12 @@ const Checkout = () => {
                     required
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    className="appearance-none block w-full px-4 py-3 border border-slate-800 rounded-xl bg-slate-950 placeholder-slate-600 text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                    className="appearance-none block w-full px-4 py-3 border border-slate-300 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-950 placeholder-slate-400 dark:placeholder-slate-600 text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
-                  <label htmlFor="address" className="block text-sm font-semibold text-slate-300 mb-2">
+                  <label htmlFor="address" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
                     Street Address
                   </label>
                   <input
@@ -131,14 +131,14 @@ const Checkout = () => {
                     required
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
-                    className="appearance-none block w-full px-4 py-3 border border-slate-800 rounded-xl bg-slate-950 placeholder-slate-600 text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                    className="appearance-none block w-full px-4 py-3 border border-slate-300 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-950 placeholder-slate-400 dark:placeholder-slate-600 text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
                     placeholder="123 Main St"
                   />
                 </div>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div>
-                    <label htmlFor="city" className="block text-sm font-semibold text-slate-300 mb-2">
+                    <label htmlFor="city" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
                       City
                     </label>
                     <input
@@ -147,12 +147,12 @@ const Checkout = () => {
                       required
                       value={city}
                       onChange={(e) => setCity(e.target.value)}
-                      className="appearance-none block w-full px-4 py-3 border border-slate-800 rounded-xl bg-slate-950 placeholder-slate-600 text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                      className="appearance-none block w-full px-4 py-3 border border-slate-300 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-950 placeholder-slate-400 dark:placeholder-slate-600 text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
                       placeholder="New York"
                     />
                   </div>
                   <div>
-                    <label htmlFor="postalCode" className="block text-sm font-semibold text-slate-300 mb-2">
+                    <label htmlFor="postalCode" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
                       Postal Code
                     </label>
                     <input
@@ -161,12 +161,12 @@ const Checkout = () => {
                       required
                       value={postalCode}
                       onChange={(e) => setPostalCode(e.target.value)}
-                      className="appearance-none block w-full px-4 py-3 border border-slate-800 rounded-xl bg-slate-950 placeholder-slate-600 text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                      className="appearance-none block w-full px-4 py-3 border border-slate-300 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-950 placeholder-slate-400 dark:placeholder-slate-600 text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
                       placeholder="10001"
                     />
                   </div>
                   <div>
-                    <label htmlFor="country" className="block text-sm font-semibold text-slate-300 mb-2">
+                    <label htmlFor="country" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
                       Country
                     </label>
                     <input
@@ -175,14 +175,14 @@ const Checkout = () => {
                       required
                       value={country}
                       onChange={(e) => setCountry(e.target.value)}
-                      className="appearance-none block w-full px-4 py-3 border border-slate-800 rounded-xl bg-slate-950 placeholder-slate-600 text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                      className="appearance-none block w-full px-4 py-3 border border-slate-300 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-950 placeholder-slate-400 dark:placeholder-slate-600 text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
                       placeholder="USA"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-slate-300 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
                     Phone Number
                   </label>
                   <input
@@ -191,7 +191,7 @@ const Checkout = () => {
                     required
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    className="appearance-none block w-full px-4 py-3 border border-slate-800 rounded-xl bg-slate-950 placeholder-slate-600 text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                    className="appearance-none block w-full px-4 py-3 border border-slate-300 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-950 placeholder-slate-400 dark:placeholder-slate-600 text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
                     placeholder="+1 (555) 123-4567"
                   />
                 </div>
@@ -199,16 +199,16 @@ const Checkout = () => {
             </div>
 
             {/* Payment Card */}
-            <div className="bg-slate-900 border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <svg className="h-6 w-6 mr-2 text-indigo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center">
+                <svg className="h-6 w-6 mr-2 text-indigo-500 dark:text-indigo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                 </svg>
                 Payment Method
               </h2>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <label className={`flex items-center justify-between p-5 border rounded-2xl cursor-pointer transition-all duration-200 ${paymentMethod === 'Cash on Delivery' ? 'border-indigo-500 bg-indigo-950/20' : 'border-slate-800 hover:border-slate-750 bg-slate-950/50'}`}>
+                <label className={`flex items-center justify-between p-5 border rounded-2xl cursor-pointer transition-all duration-200 ${paymentMethod === 'Cash on Delivery' ? 'border-indigo-500 bg-indigo-50/50 dark:bg-indigo-950/20' : 'border-slate-200 hover:border-slate-300 bg-slate-50 dark:border-slate-800 dark:hover:border-slate-750 dark:bg-slate-950/50'}`}>
                   <div className="flex items-center gap-3">
                     <input
                       type="radio"
@@ -216,13 +216,13 @@ const Checkout = () => {
                       value="Cash on Delivery"
                       checked={paymentMethod === 'Cash on Delivery'}
                       onChange={(e) => setPaymentMethod(e.target.value)}
-                      className="h-4.5 w-4.5 text-indigo-600 border-slate-800 focus:ring-indigo-500 bg-slate-950"
+                      className="h-4.5 w-4.5 text-indigo-600 border-slate-300 dark:border-slate-800 focus:ring-indigo-500 bg-white dark:bg-slate-950"
                     />
-                    <span className="font-bold text-white text-base">Cash on Delivery</span>
+                    <span className="font-bold text-slate-850 dark:text-white text-base">Cash on Delivery</span>
                   </div>
                 </label>
 
-                <label className={`flex items-center justify-between p-5 border rounded-2xl cursor-pointer transition-all duration-200 ${paymentMethod === 'Demo Payment' ? 'border-indigo-500 bg-indigo-950/20' : 'border-slate-800 hover:border-slate-750 bg-slate-950/50'}`}>
+                <label className={`flex items-center justify-between p-5 border rounded-2xl cursor-pointer transition-all duration-200 ${paymentMethod === 'Demo Payment' ? 'border-indigo-500 bg-indigo-50/50 dark:bg-indigo-950/20' : 'border-slate-200 hover:border-slate-300 bg-slate-50 dark:border-slate-800 dark:hover:border-slate-750 dark:bg-slate-950/50'}`}>
                   <div className="flex items-center gap-3">
                     <input
                       type="radio"
@@ -230,9 +230,9 @@ const Checkout = () => {
                       value="Demo Payment"
                       checked={paymentMethod === 'Demo Payment'}
                       onChange={(e) => setPaymentMethod(e.target.value)}
-                      className="h-4.5 w-4.5 text-indigo-600 border-slate-800 focus:ring-indigo-500 bg-slate-950"
+                      className="h-4.5 w-4.5 text-indigo-600 border-slate-300 dark:border-slate-800 focus:ring-indigo-500 bg-white dark:bg-slate-950"
                     />
-                    <span className="font-bold text-white text-base">Demo Payment</span>
+                    <span className="font-bold text-slate-850 dark:text-white text-base">Demo Payment</span>
                   </div>
                 </label>
               </div>
@@ -241,42 +241,42 @@ const Checkout = () => {
 
           {/* Cart Summary */}
           <div className="lg:col-span-1">
-            <div className="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-2xl sticky top-28 space-y-6">
-              <h2 className="text-2xl font-bold text-white pb-4 border-b border-slate-800">Review Items</h2>
+            <div className="bg-white dark:bg-slate-900 border border-slate-205 dark:border-slate-800 p-8 rounded-3xl shadow-2xl sticky top-28 space-y-6">
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white pb-4 border-b border-slate-200 dark:border-slate-800">Review Items</h2>
               
               {/* Mini Cart List */}
-              <div className="max-h-60 overflow-y-auto pr-1 space-y-4 divide-y divide-slate-800/80">
+              <div className="max-h-60 overflow-y-auto pr-1 space-y-4 divide-y divide-slate-200 dark:divide-slate-800/80">
                 {cart.map((item) => (
                   <div key={item._id || item.id} className="flex gap-4 items-center justify-between py-3 first:pt-0">
                     <div className="flex gap-3 items-center min-w-0">
                       <img 
                         src={item.imageUrl || item.image} 
                         alt={item.name} 
-                        className="w-12 h-12 object-cover rounded-xl border border-slate-850 bg-slate-950 flex-shrink-0"
+                        className="w-12 h-12 object-cover rounded-xl border border-slate-200 dark:border-slate-850 bg-slate-100 dark:bg-slate-950 flex-shrink-0"
                       />
                       <div className="min-w-0">
-                        <h4 className="text-sm font-bold text-white truncate w-32 sm:w-40">{item.name}</h4>
-                        <p className="text-xs text-slate-400 mt-0.5 font-medium">Qty: {item.quantity}</p>
+                        <h4 className="text-sm font-bold text-slate-900 dark:text-white truncate w-32 sm:w-40">{item.name}</h4>
+                        <p className="text-xs text-slate-550 dark:text-slate-400 mt-0.5 font-medium">Qty: {item.quantity}</p>
                       </div>
                     </div>
-                    <span className="text-sm font-bold text-white">${(item.price * item.quantity).toFixed(2)}</span>
+                    <span className="text-sm font-bold text-slate-900 dark:text-white">${(item.price * item.quantity).toFixed(2)}</span>
                   </div>
                 ))}
               </div>
 
               {/* Pricing Totals */}
-              <div className="space-y-4 text-slate-300 font-medium pt-4 border-t border-slate-800/80">
+              <div className="space-y-4 text-slate-650 dark:text-slate-300 font-medium pt-4 border-t border-slate-200 dark:border-slate-800/80">
                 <div className="flex justify-between text-sm">
                   <span>Subtotal</span>
-                  <span className="text-white">${cartSubtotal.toFixed(2)}</span>
+                  <span className="text-slate-900 dark:text-white">${cartSubtotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span>Estimated Tax (8%)</span>
-                  <span className="text-white">${cartTax.toFixed(2)}</span>
+                  <span className="text-slate-900 dark:text-white">${cartTax.toFixed(2)}</span>
                 </div>
-                <div className="flex justify-between text-base font-bold pt-4 border-t border-slate-800/80">
-                  <span className="text-white">Order Total</span>
-                  <span className="text-indigo-400">${cartTotal.toFixed(2)}</span>
+                <div className="flex justify-between text-base font-bold pt-4 border-t border-slate-200 dark:border-slate-800/80">
+                  <span className="text-slate-900 dark:text-white">Order Total</span>
+                  <span className="text-indigo-605 dark:text-indigo-400">${cartTotal.toFixed(2)}</span>
                 </div>
               </div>
 
@@ -285,7 +285,7 @@ const Checkout = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex justify-center py-4 px-6 border border-transparent text-base font-bold rounded-xl text-white bg-indigo-600 hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/25 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-slate-900 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full flex justify-center py-4 px-6 border border-transparent text-base font-bold rounded-xl text-white bg-indigo-600 hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-600/25 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-white dark:focus:ring-offset-slate-900 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
                     <div className="flex items-center">
@@ -302,7 +302,7 @@ const Checkout = () => {
                 <div className="mt-4 text-center">
                   <Link 
                     to="/cart" 
-                    className="text-sm font-semibold text-slate-400 hover:text-indigo-400 transition-colors inline-block"
+                    className="text-sm font-semibold text-slate-550 hover:text-indigo-605 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors inline-block"
                   >
                     Edit Cart
                   </Link>

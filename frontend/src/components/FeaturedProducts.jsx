@@ -52,14 +52,14 @@ const FeaturedProducts = () => {
   });
 
   return (
-    <section id="products" className="w-full bg-slate-950 border-t border-slate-900 flex-shrink-0">
-      <div className="max-w-7xl mx-auto px-8 py-20">
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12 gap-8">
+    <section id="products" className="w-full bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 flex-shrink-0">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-12 py-24 lg:py-32">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16 gap-8">
           <div>
-            <h2 className="text-4xl font-extrabold text-white tracking-tight sm:text-5xl">
+            <h2 className="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight sm:text-5xl lg:text-6xl">
               Trending Now
             </h2>
-            <p className="mt-3 text-lg md:text-xl text-slate-400">
+            <p className="mt-4 text-lg md:text-xl lg:text-2xl text-slate-550 dark:text-slate-400">
               Handpicked products just for you based on our AI recommendations.
             </p>
           </div>
@@ -99,18 +99,18 @@ const FeaturedProducts = () => {
         {/* Products Grid */}
         {!loading && !error && (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 xl:gap-12">
               {filteredProducts.map((product) => (
                 <ProductCard key={product._id || product.id} product={product} />
               ))}
             </div>
             
             {filteredProducts.length === 0 && (
-              <div className="text-center py-20 bg-slate-900 rounded-2xl border border-slate-800 mt-8 max-w-xl mx-auto px-6">
-                <svg className="h-16 w-16 mx-auto text-slate-600 mb-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="text-center py-20 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 mt-8 max-w-xl mx-auto px-6">
+                <svg className="h-16 w-16 mx-auto text-slate-400 dark:text-slate-600 mb-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
-                <p className="text-slate-400 text-lg font-medium">
+                <p className="text-slate-600 dark:text-slate-400 text-lg font-medium">
                   No products found matching "{keyword}" {activeCategory !== 'All' ? `in category "${activeCategory}"` : ''}
                 </p>
                 <button 

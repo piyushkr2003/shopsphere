@@ -39,22 +39,22 @@ const Login = () => {
   };
 
   return (
-    <div className="flex-grow flex items-center justify-center py-24 px-4 sm:px-6 lg:px-8 bg-slate-950">
-      <div className="max-w-md w-full space-y-8 bg-slate-900 p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl">
+    <div className="flex-grow flex items-center justify-center py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-950">
+      <div className="max-w-md w-full space-y-8 bg-white dark:bg-slate-900 p-8 sm:p-10 rounded-3xl border border-slate-202 dark:border-slate-800 shadow-2xl">
         <div>
-          <h2 className="text-center text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-center text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             Welcome back
           </h2>
-          <p className="mt-3 text-center text-base text-slate-400">
+          <p className="mt-3 text-center text-base text-slate-600 dark:text-slate-400">
             Or{' '}
-            <Link to="/register" className="font-bold text-indigo-500 hover:text-indigo-400 transition-colors">
+            <Link to="/register" className="font-bold text-indigo-600 hover:text-indigo-500 dark:text-indigo-500 dark:hover:text-indigo-400 transition-colors">
               create a new account
             </Link>
           </p>
         </div>
 
         {(localError || error) && (
-          <div className="bg-red-950/20 border border-red-900/50 text-red-200 px-4 py-3 rounded-xl text-sm" role="alert">
+          <div className="bg-red-100 dark:bg-red-950/20 border border-red-200 dark:border-red-900/50 text-red-755 dark:text-red-200 px-4 py-3 rounded-xl text-sm" role="alert">
             <span className="font-bold">Error:</span> {localError || error}
           </div>
         )}
@@ -62,7 +62,7 @@ const Login = () => {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="space-y-4">
             <div>
-              <label htmlFor="email-address" className="block text-sm font-semibold text-slate-300 mb-2">
+              <label htmlFor="email-address" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
                 Email Address
               </label>
               <input
@@ -73,12 +73,12 @@ const Login = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="appearance-none block w-full px-4 py-3 border border-slate-800 rounded-xl bg-slate-950 placeholder-slate-600 text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                className="appearance-none block w-full px-4 py-3 border border-slate-300 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-950 placeholder-slate-400 dark:placeholder-slate-600 text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
                 placeholder="you@example.com"
               />
             </div>
             <div>
-              <label htmlFor="password" className="block text-sm font-semibold text-slate-300 mb-2">
+              <label htmlFor="password" className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
                 Password
               </label>
               <input
@@ -89,7 +89,7 @@ const Login = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="appearance-none block w-full px-4 py-3 border border-slate-800 rounded-xl bg-slate-950 placeholder-slate-600 text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                className="appearance-none block w-full px-4 py-3 border border-slate-300 dark:border-slate-800 rounded-xl bg-slate-50 dark:bg-slate-950 placeholder-slate-400 dark:placeholder-slate-600 text-slate-800 dark:text-white focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 text-base"
                 placeholder="••••••••"
               />
             </div>
@@ -99,7 +99,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={loading}
-              className="group relative w-full flex justify-center py-3.5 px-4 border border-transparent text-base font-bold rounded-xl text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-slate-900 transition-colors shadow-lg shadow-indigo-600/25 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="group relative w-full flex justify-center py-3.5 px-4 border border-transparent text-base font-bold rounded-xl text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-white dark:focus:ring-offset-slate-900 transition-colors shadow-lg shadow-indigo-600/25 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <div className="flex items-center">

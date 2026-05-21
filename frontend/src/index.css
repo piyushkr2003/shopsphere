@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body, nav, footer, section, div, h1, h2, h3, h4, p, span, a, button, input, textarea, select {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+}
+
 body {
   margin: 0;
   min-width: 320px;
