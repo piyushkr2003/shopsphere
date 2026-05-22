@@ -6,10 +6,10 @@ A modern full-stack MERN ecommerce platform featuring authentication, product di
 
 ## Live Demo
 
-Frontend: Coming Soon  
-Backend API: Coming Soon
+Frontend:https://shopsphere-mauve.vercel.app   
+Backend API:https://shopsphere-backend-kxza.onrender.com
 
----
+--- 
 
 # Features
 
