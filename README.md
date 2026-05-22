@@ -1,4 +1,4 @@
-# Shopshere 
+# ShopSphere
 
 A modern full-stack MERN ecommerce platform featuring authentication, product discovery, cart and checkout workflows, order management, responsive UI, search & filtering, and dark/light theme support.
 
@@ -11,16 +11,16 @@ Backend API: Coming Soon
 
 ---
 
-## Features
+# Features
 
-### Authentication & Security
+## Authentication & Security
 - JWT-based Authentication
 - Login & Registration System
 - Protected Routes
 - Persistent User Sessions
 - Secure API Access
 
-### Ecommerce Features
+## Ecommerce Features
 - Dynamic Product Listing
 - Product Details Page
 - Quantity Selector
@@ -30,13 +30,13 @@ Backend API: Coming Soon
 - Order Placement
 - Order History Tracking
 
-### Search & Filtering
+## Search & Filtering
 - Product Search
 - Category Filtering
 - Combined Search + Filter Logic
 - Empty State Handling
 
-### UI & UX
+## UI & UX
 - Fully Responsive Design
 - Modern Ecommerce Interface
 - Dark / Light Theme Toggle
@@ -44,7 +44,7 @@ Backend API: Coming Soon
 - Smooth Theme Transitions
 - Mobile Optimized Layout
 
-### Backend Features
+## Backend Features
 - REST API Architecture
 - MongoDB Atlas Integration
 - Express.js Backend
@@ -100,6 +100,8 @@ shopsphere/
 │   └── vite.config.js
 │
 └── README.md
+```
+
 ---
 
 # Core Functionalities
@@ -109,16 +111,38 @@ shopsphere/
 - User Login
 - JWT Token Generation
 - Protected Routes
-- Persistent Sessions
+- Persistent User Sessions
+- Logout Functionality
 
-## Ecommerce Flow
-- Browse Products
-- Search & Filter
-- View Product Details
+## Product Browsing Flow
+- Dynamic Product Listing
+- Product Search
+- Category Filtering
+- Combined Search & Filter
+- Product Details Page
+- Related Products
+
+## Cart & Checkout Flow
 - Add Products to Cart
-- Checkout
-- Place Orders
-- View Order History
+- Quantity Update
+- Remove Cart Items
+- Cart Persistence
+- Checkout Form
+- Demo Payment Option
+- Order Placement
+
+## Order Management Flow
+- Order Success Page
+- User Order History
+- Order Status Display
+- Shipping Details Display
+
+## UI & User Experience
+- Responsive Layout
+- Dark / Light Theme Toggle
+- Theme Persistence
+- Empty State Handling
+- Loading & Error States
 
 ---
 
@@ -150,7 +174,7 @@ MongoDB Atlas
 
 ## Piyush Kumar
 
-GitHub:
+GitHub:  
 https://github.com/piyushkr2003
 
 ---
