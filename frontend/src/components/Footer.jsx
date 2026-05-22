@@ -14,7 +14,7 @@ const Footer = () => {
               Your intelligent shopping companion. Discover perfect products with the power of artificial intelligence.
             </p>
           </div>
-          
+
           {/* Links Group 1 */}
           <div>
             <h3 className="text-slate-855 dark:text-white font-bold mb-6 uppercase tracking-wider text-sm">Shop</h3>
@@ -40,11 +40,11 @@ const Footer = () => {
           {/* Newsletter */}
           <div>
             <h3 className="text-slate-855 dark:text-white font-bold mb-6 uppercase tracking-wider text-sm">Stay Updated</h3>
-            <p className="text-slate-600 dark:text-slate-400 text-base mb-6">Subscribe to our newsletter for exclusive offers and AI recommendations.</p>
+            <p className="text-slate-600 dark:text-slate-400 text-base mb-6">Subscribe to our newsletter for exclusive offers and smart recommendations.</p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
+              <input
+                type="email"
+                placeholder="Enter your email"
                 className="bg-white dark:bg-slate-900 text-slate-800 dark:text-white px-4 py-3 rounded-xl focus:outline-none focus:ring-1 focus:ring-indigo-500 w-full text-base border border-slate-300 dark:border-slate-800 placeholder-slate-400 dark:placeholder-slate-600"
               />
               <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl transition-colors text-base font-bold flex-shrink-0">
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Bottom Bar */}
         <div className="border-t border-slate-200 dark:border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-slate-500 text-sm text-center md:text-left">

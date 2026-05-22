@@ -10,7 +10,7 @@ const FeaturedProducts = () => {
   const [error, setError] = useState(null);
   const [refreshTrigger, setRefreshTrigger] = useState(0);
   const [searchParams, setSearchParams] = useSearchParams();
-  
+
   const keyword = searchParams.get('keyword') || '';
   const activeCategory = searchParams.get('category') || 'All';
 
@@ -41,13 +41,13 @@ const FeaturedProducts = () => {
   }, [refreshTrigger]);
 
   const filteredProducts = products.filter((product) => {
-    const matchesCategory = activeCategory === 'All' || 
+    const matchesCategory = activeCategory === 'All' ||
       product.category.toLowerCase() === activeCategory.toLowerCase();
-      
-    const matchesKeyword = !keyword || 
+
+    const matchesKeyword = !keyword ||
       product.name.toLowerCase().includes(keyword.toLowerCase()) ||
       product.category.toLowerCase().includes(keyword.toLowerCase());
-      
+
     return matchesCategory && matchesKeyword;
   });
 
@@ -60,13 +60,13 @@ const FeaturedProducts = () => {
               Trending Now
             </h2>
             <p className="mt-4 text-lg md:text-xl lg:text-2xl text-slate-550 dark:text-slate-400">
-              Handpicked products just for you based on our AI recommendations.
+              Handpicked products just for you based on our smart product recommendations.
             </p>
           </div>
           <div id="categories" className="flex-shrink-0">
-            <CategoryButtons 
-              activeCategory={activeCategory} 
-              setActiveCategory={setActiveCategory} 
+            <CategoryButtons
+              activeCategory={activeCategory}
+              setActiveCategory={setActiveCategory}
             />
           </div>
         </div>
@@ -87,7 +87,7 @@ const FeaturedProducts = () => {
             </svg>
             <p className="text-red-400 text-lg font-semibold mb-2">Oops! Something went wrong</p>
             <p className="text-slate-400 text-base">{error}</p>
-            <button 
+            <button
               onClick={() => setRefreshTrigger((prev) => prev + 1)}
               className="mt-6 px-6 py-2.5 bg-red-900/40 text-red-200 font-semibold hover:bg-red-900/60 rounded-xl transition-colors text-base"
             >
@@ -104,7 +104,7 @@ const FeaturedProducts = () => {
                 <ProductCard key={product._id || product.id} product={product} />
               ))}
             </div>
-            
+
             {filteredProducts.length === 0 && (
               <div className="text-center py-20 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 mt-8 max-w-xl mx-auto px-6">
                 <svg className="h-16 w-16 mx-auto text-slate-400 dark:text-slate-600 mb-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -113,7 +113,7 @@ const FeaturedProducts = () => {
                 <p className="text-slate-600 dark:text-slate-400 text-lg font-medium">
                   No products found matching "{keyword}" {activeCategory !== 'All' ? `in category "${activeCategory}"` : ''}
                 </p>
-                <button 
+                <button
                   onClick={() => {
                     setSearchParams({});
                   }}
