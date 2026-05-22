@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand Info */}
           <div>
             <a href="/" className="text-3xl font-bold text-slate-800 dark:text-white tracking-tight mb-6 inline-block">
-              ShopSphere<span className="text-indigo-500">AI</span>
+              ShopSphere
             </a>
             <p className="text-slate-600 dark:text-slate-400 text-base leading-relaxed">
               Your intelligent shopping companion. Discover perfect products with the power of artificial intelligence.
@@ -57,7 +57,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-slate-200 dark:border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-slate-500 text-sm text-center md:text-left">
-            &copy; {new Date().getFullYear()} ShopSphere AI. All rights reserved.
+            &copy; {new Date().getFullYear()} ShopSphere. All rights reserved.
           </p>
           <div className="flex space-x-6 justify-center">
             <a href="#" className="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors block">

@@ -1,16 +1,160 @@
-# React + Vite
+# Shopshere 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack MERN ecommerce platform featuring authentication, product discovery, cart and checkout workflows, order management, responsive UI, search & filtering, and dark/light theme support.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+Frontend: Coming Soon  
+Backend API: Coming Soon
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Authentication & Security
+- JWT-based Authentication
+- Login & Registration System
+- Protected Routes
+- Persistent User Sessions
+- Secure API Access
+
+### Ecommerce Features
+- Dynamic Product Listing
+- Product Details Page
+- Quantity Selector
+- Related Products
+- Shopping Cart System
+- Checkout Workflow
+- Order Placement
+- Order History Tracking
+
+### Search & Filtering
+- Product Search
+- Category Filtering
+- Combined Search + Filter Logic
+- Empty State Handling
+
+### UI & UX
+- Fully Responsive Design
+- Modern Ecommerce Interface
+- Dark / Light Theme Toggle
+- Persistent Theme Preference
+- Smooth Theme Transitions
+- Mobile Optimized Layout
+
+### Backend Features
+- REST API Architecture
+- MongoDB Atlas Integration
+- Express.js Backend
+- Mongoose Models
+- Order Management APIs
+- Authentication Middleware
+
+---
+
+# Tech Stack
+
+## Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Axios
+- Context API
+
+## Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+- bcryptjs
+
+---
+
+# Project Structure
+
+```text
+shopsphere/
+│
+├── backend/
+│   ├── config/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── seed.js
+│
+├── frontend/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   ├── public/
+│   └── vite.config.js
+│
+└── README.md
+---
+
+# Core Functionalities
+
+## Authentication Flow
+- User Registration
+- User Login
+- JWT Token Generation
+- Protected Routes
+- Persistent Sessions
+
+## Ecommerce Flow
+- Browse Products
+- Search & Filter
+- View Product Details
+- Add Products to Cart
+- Checkout
+- Place Orders
+- View Order History
+
+---
+
+# Future Improvements
+
+- Wishlist Functionality
+- Payment Gateway Integration
+- Product Reviews & Ratings
+- AI Product Recommendations
+- Admin Dashboard
+- Inventory Analytics
+
+---
+
+# Deployment
+
+## Frontend
+Recommended: Vercel
+
+## Backend
+Recommended: Render / Railway
+
+## Database
+MongoDB Atlas
+
+---
+
+# Author
+
+## Piyush Kumar
+
+GitHub:
+https://github.com/piyushkr2003
+
+---
+
+# License
+
+This project is built for educational and portfolio purposes.

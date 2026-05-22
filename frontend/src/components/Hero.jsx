@@ -11,7 +11,7 @@ const Hero = () => {
             Smarter shopping with <span className="text-indigo-500">AI-powered picks</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl xl:text-2xl text-slate-650 dark:text-slate-300 mb-10 max-w-xl lg:max-w-none mx-auto lg:mx-0 leading-relaxed">
-            Discover products tailored perfectly to your style and needs. ShopSphere AI uses advanced algorithms to curate the best items just for you.
+            Discover products tailored perfectly to your style and needs. ShopSphere uses advanced algorithms to curate the best items just for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
             <a

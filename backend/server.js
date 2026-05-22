@@ -27,7 +27,7 @@ app.use('/api/orders', orderRoutes);
 
 // Root route for testing
 app.get('/', (req, res) => {
-  res.send('ShopSphere AI API is running...');
+  res.send('ShopSphere API is running...');
 });
 
 // Fallback error handler for unhandled routes

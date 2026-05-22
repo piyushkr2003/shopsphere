@@ -19,7 +19,7 @@ const OrderSuccess = () => {
         <div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">Order Placed Successfully!</h2>
           <p className="mt-3 text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed">
-            Thank you for shopping with ShopSphere AI. Your order is now being processed.
+            Thank you for shopping with ShopSphere. Your order is now being processed.
           </p>
         </div>
 

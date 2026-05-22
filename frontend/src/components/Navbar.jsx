@@ -45,7 +45,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex-shrink-0 flex items-center">
           <Link to="/" className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            ShopSphere<span className="text-indigo-500">AI</span>
+            ShopSphere
           </Link>
         </div>
 
