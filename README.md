@@ -1,56 +1,106 @@
 # ShopSphere
 
-A modern full-stack MERN ecommerce platform featuring authentication, product discovery, cart and checkout workflows, order management, responsive UI, search & filtering, and dark/light theme support.
+A modern full-stack MERN ecommerce platform built to deliver a seamless online shopping experience with secure authentication, dynamic product discovery, responsive UI, cart & checkout workflows, order management, advanced filtering, and dark/light theme support.
+
+Designed with scalability, clean architecture, and modern frontend/backend practices using the MERN stack.
 
 ---
 
 ## Live Demo
 
-Frontend:https://shopsphere-mauve.vercel.app   
-Backend API:https://shopsphere-backend-kxza.onrender.com
+### Frontend
+https://shopsphere-mauve.vercel.app
 
---- 
+### Backend API
+https://shopsphere-backend-kxza.onrender.com
 
-# Features
+---
+
+# Project Preview
+
+## Home Page
+
+![Home Page](./screenshots/home.png)
+
+---
+
+## Product Details Page
+
+![Product Details](./screenshots/product-details.png)
+
+---
+
+## Shopping Cart
+
+![Cart Page](./screenshots/cart.png)
+
+---
+
+## Checkout Flow
+
+![Checkout Page](./screenshots/checkout.png)
+
+---
+
+## Orders Dashboard
+
+![Orders Dashboard](./screenshots/orders.png)
+
+---
+
+# Key Features
 
 ## Authentication & Security
-- JWT-based Authentication
-- Login & Registration System
+- JWT-based Authentication System
+- User Registration & Login
 - Protected Routes
 - Persistent User Sessions
 - Secure API Access
+- Password Encryption using bcryptjs
 
-## Ecommerce Features
-- Dynamic Product Listing
+---
+
+## Ecommerce Functionalities
+- Dynamic Product Catalog
 - Product Details Page
-- Quantity Selector
-- Related Products
-- Shopping Cart System
+- Related Products Suggestions
+- Quantity Selection Controls
+- Shopping Cart Management
 - Checkout Workflow
-- Order Placement
-- Order History Tracking
+- Order Placement System
+- User Order History Dashboard
+
+---
 
 ## Search & Filtering
-- Product Search
-- Category Filtering
+- Real-time Product Search
+- Category-based Filtering
 - Combined Search + Filter Logic
-- Empty State Handling
+- Dynamic Empty State Handling
+- URL-based Filter Persistence
 
-## UI & UX
-- Fully Responsive Design
-- Modern Ecommerce Interface
+---
+
+## User Experience & Interface
+- Fully Responsive Layout
+- Modern Ecommerce UI Design
 - Dark / Light Theme Toggle
 - Persistent Theme Preference
-- Smooth Theme Transitions
-- Mobile Optimized Layout
+- Smooth UI Transitions
+- Mobile Optimized Experience
+- Interactive Product Cards
+- Loading & Error States
 
-## Backend Features
-- REST API Architecture
-- MongoDB Atlas Integration
-- Express.js Backend
-- Mongoose Models
-- Order Management APIs
+---
+
+## Backend & API Features
+- RESTful API Architecture
+- MongoDB Atlas Cloud Database
+- Express.js Backend Server
+- Mongoose Data Models
 - Authentication Middleware
+- Order Management APIs
+- Environment Variable Configuration
 
 ---
 
@@ -64,6 +114,8 @@ Backend API:https://shopsphere-backend-kxza.onrender.com
 - Axios
 - Context API
 
+---
+
 ## Backend
 - Node.js
 - Express.js
@@ -74,7 +126,7 @@ Backend API:https://shopsphere-backend-kxza.onrender.com
 
 ---
 
-# Project Structure
+# Project Architecture
 
 ```text
 shopsphere/
@@ -99,6 +151,8 @@ shopsphere/
 │   ├── public/
 │   └── vite.config.js
 │
+├── screenshots/
+│
 └── README.md
 ```
 
@@ -110,39 +164,61 @@ shopsphere/
 - User Registration
 - User Login
 - JWT Token Generation
-- Protected Routes
-- Persistent User Sessions
+- Protected Route Authorization
+- Persistent Sessions
 - Logout Functionality
 
+---
+
 ## Product Browsing Flow
-- Dynamic Product Listing
+- Browse Products
 - Product Search
 - Category Filtering
-- Combined Search & Filter
-- Product Details Page
-- Related Products
+- Combined Search & Filtering
+- Product Details Navigation
+- Related Products Display
+
+---
 
 ## Cart & Checkout Flow
 - Add Products to Cart
-- Quantity Update
+- Quantity Management
 - Remove Cart Items
-- Cart Persistence
-- Checkout Form
-- Demo Payment Option
+- Persistent Cart State
+- Checkout Form Handling
+- Demo Payment Workflow
 - Order Placement
 
-## Order Management Flow
-- Order Success Page
+---
+
+## Order Management
+- Order Success Confirmation
 - User Order History
 - Order Status Display
-- Shipping Details Display
+- Shipping Details Tracking
 
-## UI & User Experience
-- Responsive Layout
+---
+
+## UI & Experience
+- Responsive Design System
 - Dark / Light Theme Toggle
 - Theme Persistence
-- Empty State Handling
-- Loading & Error States
+- Loading States
+- Error Handling
+- Empty State Components
+
+---
+
+# Deployment
+
+## Frontend Hosting
+- Vercel
+
+## Backend Hosting
+- Render
+
+## Database
+- MongoDB Atlas
 
 ---
 
@@ -151,22 +227,12 @@ shopsphere/
 - Wishlist Functionality
 - Payment Gateway Integration
 - Product Reviews & Ratings
-- AI Product Recommendations
+- Personalized Product Recommendations
 - Admin Dashboard
 - Inventory Analytics
-
----
-
-# Deployment
-
-## Frontend
-Recommended: Vercel
-
-## Backend
-Recommended: Render / Railway
-
-## Database
-MongoDB Atlas
+- Coupon & Discount System
+- Advanced Product Sorting
+- User Profile Management
 
 ---
 
@@ -181,4 +247,4 @@ https://github.com/piyushkr2003
 
 # License
 
-This project is built for educational and portfolio purposes.
+This project is built for educational, learning, and portfolio purposes.
