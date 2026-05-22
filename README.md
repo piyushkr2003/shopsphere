@@ -38,8 +38,7 @@ https://shopsphere-backend-kxza.onrender.com
 
 ## Checkout Flow
 
-![Checkout Page](./screenshots/checkout.png)
-
+![Checkout Page](./screenshots/Checkout Page.png)
 ---
 
 ## Orders Dashboard
