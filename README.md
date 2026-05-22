@@ -47,6 +47,11 @@ https://shopsphere-backend-kxza.onrender.com
 
 ---
 
+## Light Mode UI
+
+![Light Mode](./screenshots/light-mode.png)
+
+---
 # Key Features
 
 ## Authentication & Security
