@@ -248,3 +248,5 @@ https://github.com/piyushkr2003
 # License
 
 This project is built for educational, learning, and portfolio purposes.
+
+[def]: ./screenshots/home.png
