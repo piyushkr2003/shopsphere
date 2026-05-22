@@ -20,7 +20,7 @@ https://shopsphere-backend-kxza.onrender.com
 
 ## Home Page
 
-![Home Page](./screenshots/home.png)
+![Home Page](./screenshots/home-temp.png)
 
 ---
 
